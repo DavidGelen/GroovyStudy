@@ -20,3 +20,7 @@ def test(String string) {
     //displayName = user.name ?: 'Anonymous'
 }
 
+String takeString(String message) {
+    assert message instanceof String
+    return message
+}

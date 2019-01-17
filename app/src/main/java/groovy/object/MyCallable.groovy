@@ -1,4 +1,4 @@
-package groovy.classtype
+package groovy.object
 
 import groovy.transform.CompileStatic
 

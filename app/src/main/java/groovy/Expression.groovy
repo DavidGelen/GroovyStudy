@@ -18,3 +18,9 @@ assert c == 2 && d == 6
 def g = 4
 def h = --g + 1
 assert g == 3 && h == 4
+
+assert 'ab' == 'a' + 'b'
+
+def aMultilineString = '''line one
+line two
+line three'''

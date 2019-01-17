@@ -1,6 +1,6 @@
 package groovy
 
-import groovy.classtype.Person
+import groovy.object.Person
 
 def list1 = ['Groovy 1.8','Groovy 2.0','Groovy 2.3']
 def list2 = ['Groovy 1.8','Groovy 2.0','Groovy 2.3']
@@ -44,3 +44,45 @@ def list5 = [
         new Person(name: 'Bob',   age: 42),
         new Person(name: 'Julia', age: 35)]
 assert transform(list5, action) == ['Bob is 42', 'Julia is 35']
+
+//===================================
+
+def heterogeneous = [1, "a", true]
+
+
+def letters = ['a', 'b', 'c', 'd']
+assert letters[0] == 'a'
+assert letters[1] == 'b'
+
+assert letters[-1] == 'd'
+assert letters[-2] == 'c'
+
+letters[2] = 'C'
+assert letters[2] == 'C'
+
+letters << 'e' //Use the << leftShift operator to append an element at the end of the list
+assert letters[ 4] == 'e'
+assert letters[-1] == 'e'
+
+assert letters[1, 3] == ['b', 'd']
+assert letters[2..4] == ['C', 'd', 'e']
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
