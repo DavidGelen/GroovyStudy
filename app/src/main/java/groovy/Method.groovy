@@ -24,3 +24,43 @@ String takeString(String message) {
     assert message instanceof String
     return message
 }
+
+int fib(int n) {
+    n < 2 ? 1 : fib(n-1) + fib(n-2)
+}
+assert fib(10) == 89
+
+//====================================
+
+def foo(Map args, Integer number) { "${args.name}: ${args.age}, and the number is ${number}" }
+foo(name: 'Marie', age: 1, 23)
+foo(23, name: 'Marie', age: 1)
+
+//===============================
+
+def foo(Object... args) { args.length }
+assert foo() == 0
+assert foo(1) == 1
+assert foo(1, 2) == 2
+
+def foo2(Object[] args) { args.length }
+assert foo2() == 0
+assert foo2(1) == 1
+assert foo2(1, 2) == 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
