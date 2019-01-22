@@ -67,6 +67,13 @@ assert letters[-1] == 'e'
 assert letters[1, 3] == ['b', 'd']
 assert letters[2..4] == ['C', 'd', 'e']
 
+/*def list = [new A(), new B()]
+list.each {
+    it.greet()
+    it.salute()
+    it.exit()
+}*/
+
 
 
 
